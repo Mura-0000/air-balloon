@@ -16,9 +16,7 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
-        
         &_front
-
         &_back
             background: green
             transform: rotateY(180deg)
@@ -76,7 +74,8 @@
                 display: inline-block
                 &:not(:last-child)
                     margin-bottom: 2rem
-
+                @include respond(tab-land)
+                    font-size: 1.5rem
     &__backSide-box
         position: absolute
         top: 50%

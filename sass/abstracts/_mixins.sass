@@ -11,3 +11,30 @@
       display: table
       clear: both
 
+// @mixin phone
+//    @media (max-width: 600px)
+//       @content
+      
+@mixin respond($breakpoit)
+   @if $breakpoit == phone
+   
+      @media (max-width: 600px)
+         @content
+      
+   @if $breakpoit ==  tab-port
+      @media (max-width: 900px)
+         @content
+
+
+   @if $breakpoit ==  tab-land
+      @media (max-width: 1240px)
+         @content
+
+   @if $breakpoit ==  tab-becstop
+      @media (max-width: 1440px)
+         @content
+
+   @if $breakpoit == dig-screen
+      @media (min-width: 1800px)
+         @content
+      
