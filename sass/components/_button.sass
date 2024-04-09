@@ -12,6 +12,8 @@
       @include respond(tab-land)
          font-size: 1.8rem
          padding: 1.5rem 3.7rem
+      @include respond (tab-port)
+         padding: 2rem 7rem
    &:hover
       transform: translateY(-4px)
       box-shadow: $box-shadow
@@ -41,6 +43,8 @@
     &, &:link, &:visited
         background: $color-brown-dark
         color: $color-white
+        @include respond (tab-port)
+            margin-top: 2rem
     &:hover
     &::after
         background: $color-brown-dark
